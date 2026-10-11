@@ -6,7 +6,7 @@
   <a href="#-key-features">Features</a> ·
   <a href="#-application-modes">Modes</a> ·
   <a href="#-supported-models">Models</a> ·
-  <a href="#-installation--setup">Install</a> ·
+  <a href="resources/installation.md">Install</a> ·
   <a href="#-configuration">Configuration</a> ·
   <a href="#-text-generation">Text</a> ·
   <a href="#-images-api">Images</a> ·
