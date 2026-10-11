@@ -210,13 +210,25 @@ APP_SUBTITLE = 'Local AI'
 DB_PATH = 'stores/sqlite/loca.db'
 DEFAULT_CTX = 4096
 CORES = multiprocessing.cpu_count( )
-FAVICON = r'resources/images/favicon.ico'
-BRO_LOGO = r'resources/images/bro_logo.png'
-LEEROY_LOGO = r'resources/images/leeroy_logo.png'
-BOO_LOGO = r'resources/images/boo_logo.png'
-JIMI_LOGO = r'resources/images/jimi_logo.png'
-BUDDY_LOGO = r'resources/images/buddy_logo.png'
-GIPITY_LOGO = r'resources/images/gipity_logo.png'
+FAVICON = r'resources/images/loca-llama_logo.ico'
+BRO_LOGO = (r'resources/images/bro_logo.png'
+	if (ROOT_DIR / 'resources/images/bro_logo.png').is_file( )
+	else r'resources/images/loca-llama_logo.png')
+LEEROY_LOGO = (r'resources/images/leeroy_logo.png'
+	if (ROOT_DIR / 'resources/images/leeroy_logo.png').is_file( )
+	else r'resources/images/loca-llama_logo.png')
+BOO_LOGO = (r'resources/images/boo_logo.png'
+	if (ROOT_DIR / 'resources/images/boo_logo.png').is_file( )
+	else r'resources/images/loca-llama_logo.png')
+JIMI_LOGO = (r'resources/images/jimi_logo.png'
+	if (ROOT_DIR / 'resources/images/jimi_logo.png').is_file( )
+	else r'resources/images/loca-llama_logo.png')
+BUDDY_LOGO = (r'resources/images/buddy_logo.png'
+	if (ROOT_DIR / 'resources/images/buddy_logo.png').is_file( )
+	else r'resources/images/loca-llama_logo.png')
+GIPITY_LOGO = (r'resources/images/gipity_logo.png'
+	if (ROOT_DIR / 'resources/images/gipity_logo.png').is_file( )
+	else r'resources/images/loca-llama_logo.png')
 NISTY_LOGO = r'resources/images/nisty_logo.png'
 LOGO = r'resources/images/loca-llama_logo.png'
 XML_BLOCK_PATTERN = re.compile( r"<(?P<tag>[a-zA-Z0-9_:-]+)>(?P<body>.*?)</\1>", re.DOTALL )
